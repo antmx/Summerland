@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Contact Us - Holiday apartment for rent in Los Cristianos, Tenerife, Canary Islands";
+}
+
+<h1>Contact us</h1>
+
+<p>
+	Please contact the owner, Susan Chambers, using any of the following methods, to make a booking at this holiday rental apartment in the Summerland complex, Los Cristianos, or to discuss your holiday requirements:
+</p>
+
+<p>
+	Telephone (UK): <a href="tel:00441204531473" title="Telephone">+44 (0)1204 531473</a>
+</p>
+
+<p>
+	Email: <a href="mailto:schambers12@live.co.uk?subject=Summerland" title="Email the owner">schambers12@live.co.uk</a>
+</p>
+
+<p>
+	Fill in this form to let us know what you're looking for.
+</p>
+
+@Html.Partial("_EnquiryForm", new ViewDataDictionary { { "id", "enquiryForm1" } })
+
+
+@Html.Partial("_PriceList", new PriceList())

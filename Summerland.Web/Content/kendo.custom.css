@@ -1,0 +1,111 @@
+﻿
+.k-calendar {
+	border-radius: 5px;
+}
+
+	.k-calendar .k-nav-fast {
+		font-weight: bold;
+	}
+
+	.k-calendar .k-header .k-nav-prev,
+	.k-calendar .k-header .k-nav-next {
+		display: none;
+	}
+
+.dt-booked {
+	background-color: #f00;
+	padding-right: 3px;
+}
+
+.dt-provisional {
+	background-color: #ffd800;
+	padding-right: 3px;
+}
+
+.dt-changeover {
+	background-color: #ff6a00;
+	padding-right: 3px;
+}
+
+.dt-available {
+	background-color: #4cff00;
+	padding-right: 3px;
+}
+
+.dt { width:27px; background-color:#4cff00; background-repeat: no-repeat; background-position: 50% 50%; border-radius:4px; }
+.dt > span { padding-right:6px; }
+
+.dt-b {
+	background-color: #f00;
+}
+
+.dt-b-am {
+	background-image: url(./Images/booked-am.png);
+}
+
+.dt-b-pm {
+	background-image: url(./Images/booked-pm.png);
+}
+
+.dt-p {
+	background-color: #ff0;
+}
+
+.dt-p-am {
+	background-image: url(./Images/provisional-am.png);
+}
+
+.dt-p-pm {
+	background-image: url(./Images/provisional-pm.png);
+}
+
+.dt-p-am-b-pm {
+	background-image: url(./Images/provisional-am-booked-pm.png);
+}
+
+.dt-b-am-p-pm {
+	background-image: url(./Images/booked-am-provisional-pm.png);
+}
+
+.k-other-month .dt-booked,
+.k-other-month .dt-provisional,
+.k-other-month .dt-changeover,
+.k-other-month .dt-available,
+.k-other-month .dt-b,
+.k-other-month .dt-b-am,
+.k-other-month .dt-b-pm,
+.k-other-month .dt-p,
+.k-other-month .dt-p-am,
+.k-other-month .dt-p-pm,
+.k-other-month .dt-p-am-b-pm,
+.k-other-month .dt-b-am-p-pm {
+	background-color: inherit;
+	background-image: none;
+}
+
+.k-calendar.key { width:550px; height:auto; }
+.k-calendar.key td.label { width:auto; text-align:left; }
+.k-calendar.key .k-content { height:auto; }
+.k-calendar.key .item { width:30px; }
+
+.key {
+	border: solid 1px #c5c5c5;
+	border-radius:4px;
+	display:inline-block;
+}
+
+.key caption {
+	font-weight:bold;
+	background-color: #e3e3e3;
+	padding:4px 0;
+	text-align:center;
+}
+
+	.key .date {
+		padding: 4px 6px 4px 7px;
+		border-radius:4px;
+	}
+
+	.key .sep {
+		width: 10px;
+	}

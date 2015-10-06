@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>@if (!string.IsNullOrWhiteSpace(ViewBag.Title))
+		  {
+		@ViewBag.Title}
+		  else
+		  {
+		@:Summarland Apartments
+		}</title>
+
+	<meta name="description" content="Holiday apartment for rent in Los Cristianos, Tenerife" />
+
+	@*@Scripts.Render("/bundles/modernizr")*@
+
+	<link rel="stylesheet" href="/Content/kendo.common.min.css">
+	<link rel="stylesheet" href="/Content/kendo.default.min.css">
+	<link rel="stylesheet" href="/Content/normalize.css" />
+	<link rel="stylesheet" href="/Content/themes/summerland/Site.css" />
+	<link rel="stylesheet" href="/Content/kendo.custom.css" />
+
+	<script src="/Scripts/jquery.min.js"></script>
+	<script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+	<script src="/Scripts/jquery.validate.min.js"></script>
+	<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+	<script src="/Scripts/kendo.web.min.js"></script>
+	<script src="/Scripts/kendo.aspnetmvc.min.js"></script>
+	<script src="/Scripts/console.min.js"></script>
+	<script src="/Scripts/prettify.min.js"></script>
+	<script src="/Scripts/Summerland.js"></script>
+	
+	<!--[if lte IE 8]>
+	<script src="/Scripts/html5shiv.js"></script>
+	<![endif]-->
+
+	@Html.Partial("_KendoCulture")
+
+	<meta name="google-site-verification" content="DW4wxjY1D8QKv7-mgQVZTp741VO7pp6RtOT85Yabx0M" />
+
+	<meta name="msvalidate.01" content="21BCB5F01CA713DA43769AB366266252" />
+</head>
+<body class="orange-bkgd">
+
+	<div class="central-cont">
+		<div id="outer-container" class="white-bkgd">
+			@Html.Partial("_Header")
+
+			<div id="view-content-col-wide-left" class="float-l generic-content">
+				@RenderBody()
+			</div>
+
+			<div id="sidebar-col" class="float-r generic-content">
+				@if (IsSectionDefined("sidebar"))
+				{
+				// Render current View's own sidebar
+					@RenderSection("sidebar")
+				 }
+				 else
+				 {
+				 // Render default sidebar
+					@Html.Partial("_DefaultSidebar")
+			}
+			</div>
+
+		</div>
+
+		@Html.Partial("_footer")
+
+	</div>
+
+	@Html.Partial("_GoogleTrackPageView")
+
+</body>
+</html>

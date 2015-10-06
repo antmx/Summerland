@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{793C6A0C-4348-4434-9CC5-AE5F7DA85E80}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Summerland.Web</RootNamespace>
+    <AssemblyName>Summerland.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kendo.Mvc, Version=2012.3.1315.340, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Kendo.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\HyphenatedRouteHandler.cs" />
+    <Compile Include="App_Start\LowercaseRouteConstraint.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SeoFriendlyRoute.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AvailabilityController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ContactUsController.cs" />
+    <Compile Include="Controllers\FeedbackFormController.cs" />
+    <Compile Include="Controllers\EnquiryFormController.cs" />
+    <Compile Include="Controllers\PicturesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MoreInfoController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\BaseViewPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Default\editor.png" />
+    <Content Include="Content\Default\imagebrowser.png" />
+    <Content Include="Content\Default\loading-image.gif" />
+    <Content Include="Content\Default\loading.gif" />
+    <Content Include="Content\Default\slider-h.gif" />
+    <Content Include="Content\Default\slider-v.gif" />
+    <Content Include="Content\Default\sprite.png" />
+    <Content Include="Content\EmailTemplates\Feedback.html" />
+    <Content Include="Content\EmailTemplates\Enquiry.html" />
+    <Content Include="Content\EmailTemplates\Wrapper.html" />
+    <Content Include="Content\Images\booked-am-provisional-pm.png" />
+    <Content Include="Content\Images\booked-am.png" />
+    <Content Include="Content\Images\booked-pm.png" />
+    <Content Include="Content\Images\popups\apartment-from-street.jpg" />
+    <Content Include="Content\Images\popups\Balcony-1.jpg" />
+    <Content Include="Content\Images\popups\Balcony-2.jpg" />
+    <Content Include="Content\Images\popups\Balcony-seaview-1.jpg" />
+    <Content Include="Content\Images\popups\Balcony-seaview-2.jpg" />
+    <Content Include="Content\Images\popups\Balcony-seaview-3.jpg" />
+    <Content Include="Content\Images\popups\balcony-streetview-1.jpg" />
+    <Content Include="Content\Images\popups\balcony-streetview-2.jpg" />
+    <Content Include="Content\Images\popups\balcony-streetview-3.jpg" />
+    <Content Include="Content\Images\popups\Balcony-streetview.jpg" />
+    <Content Include="Content\Images\popups\Balcony-towards-El-Tiede-1.jpg" />
+    <Content Include="Content\Images\popups\Balcony-towards-El-Tiede-2.jpg" />
+    <Content Include="Content\Images\popups\Balcony-towards-La-Gomera.jpg" />
+    <Content Include="Content\Images\popups\Bathroom-1.jpg" />
+    <Content Include="Content\Images\popups\Bathroom-2.jpg" />
+    <Content Include="Content\Images\popups\Bathroom-3.jpg" />
+    <Content Include="Content\Images\popups\Bedroom-1.jpg" />
+    <Content Include="Content\Images\popups\Bedroom-2.jpg" />
+    <Content Include="Content\Images\popups\Bedroom-3.jpg" />
+    <Content Include="Content\Images\popups\Bedroom-4.jpg" />
+    <Content Include="Content\Images\popups\Kitchen-1.jpg" />
+    <Content Include="Content\Images\popups\Kitchen-2.jpg" />
+    <Content Include="Content\Images\popups\Kitchen-3.jpg" />
+    <Content Include="Content\Images\popups\Livingroom-1.jpg" />
+    <Content Include="Content\Images\popups\Livingroom-2.jpg" />
+    <Content Include="Content\Images\popups\Livingroom-3.jpg" />
+    <Content Include="Content\Images\popups\Livingroom-4.jpg" />
+    <Content Include="Content\Images\popups\pool-1.jpg" />
+    <Content Include="Content\Images\popups\pool-2.jpg" />
+    <Content Include="Content\Images\popups\pool-3.jpg" />
+    <Content Include="Content\Images\popups\pool-4.jpg" />
+    <Content Include="Content\Images\popups\pool-5.jpg" />
+    <Content Include="Content\Images\popups\pool-6.jpg" />
+    <Content Include="Content\Images\popups\pool-7.jpg" />
+    <Content Include="Content\Images\provisional-am-booked-pm.png" />
+    <Content Include="Content\Images\provisional-am.png" />
+    <Content Include="Content\Images\provisional-pm.png" />
+    <Content Include="Content\Images\Sidebar\Balcony-seaview-1.jpg" />
+    <Content Include="Content\Images\Sidebar\Balcony-towards-El-Tiede-1.jpg" />
+    <Content Include="Content\Images\Sidebar\Kitchen-3.jpg" />
+    <Content Include="Content\Images\Sidebar\Livingroom-3.jpg" />
+    <Content Include="Content\Images\Sidebar\Livingroom-4.jpg" />
+    <Content Include="Content\Images\Sidebar\pool-2.jpg" />
+    <Content Include="Content\Images\Sidebar\pool-4.jpg" />
+    <Content Include="Content\Images\thumbs\apartment-from-street.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-1.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-2.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-seaview-1.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-seaview-2.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-seaview-3.jpg" />
+    <Content Include="Content\Images\thumbs\balcony-streetview-1.jpg" />
+    <Content Include="Content\Images\thumbs\balcony-streetview-2.jpg" />
+    <Content Include="Content\Images\thumbs\balcony-streetview-3.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-streetview.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-towards-El-Tiede-1.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-towards-El-Tiede-2.jpg" />
+    <Content Include="Content\Images\thumbs\Balcony-towards-La-Gomera.jpg" />
+    <Content Include="Content\Images\thumbs\Bathroom-1.jpg" />
+    <Content Include="Content\Images\thumbs\Bathroom-2.jpg" />
+    <Content Include="Content\Images\thumbs\Bathroom-3.jpg" />
+    <Content Include="Content\Images\thumbs\Bedroom-1.jpg" />
+    <Content Include="Content\Images\thumbs\Bedroom-2.jpg" />
+    <Content Include="Content\Images\thumbs\Bedroom-3.jpg" />
+    <Content Include="Content\Images\thumbs\Bedroom-4.jpg" />
+    <Content Include="Content\Images\thumbs\Kitchen-1.jpg" />
+    <Content Include="Content\Images\thumbs\Kitchen-2.jpg" />
+    <Content Include="Content\Images\thumbs\Kitchen-3.jpg" />
+    <Content Include="Content\Images\thumbs\Livingroom-1.jpg" />
+    <Content Include="Content\Images\thumbs\Livingroom-2.jpg" />
+    <Content Include="Content\Images\thumbs\Livingroom-3.jpg" />
+    <Content Include="Content\Images\thumbs\Livingroom-4.jpg" />
+    <Content Include="Content\Images\thumbs\pool-1.jpg" />
+    <Content Include="Content\Images\thumbs\pool-2.jpg" />
+    <Content Include="Content\Images\thumbs\pool-3.jpg" />
+    <Content Include="Content\Images\thumbs\pool-4.jpg" />
+    <Content Include="Content\Images\thumbs\pool-5.jpg" />
+    <Content Include="Content\Images\thumbs\pool-6.jpg" />
+    <Content Include="Content\Images\thumbs\pool-7.jpg" />
+    <Content Include="Content\kendo.common.min.css" />
+    <Content Include="Content\kendo.default.min.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\Images\Sidebar\Bedroom-1.jpg" />
+    <Content Include="Content\textures\brushed-metal.png" />
+    <Content Include="Content\textures\dots1.png" />
+    <Content Include="Content\textures\dots10.png" />
+    <Content Include="Content\textures\dots11.png" />
+    <Content Include="Content\textures\dots12.png" />
+    <Content Include="Content\textures\dots13.png" />
+    <Content Include="Content\textures\dots2.png" />
+    <Content Include="Content\textures\dots3.png" />
+    <Content Include="Content\textures\dots4.png" />
+    <Content Include="Content\textures\dots5.png" />
+    <Content Include="Content\textures\dots6.png" />
+    <Content Include="Content\textures\dots7.png" />
+    <Content Include="Content\textures\dots8.png" />
+    <Content Include="Content\textures\dots9.png" />
+    <Content Include="Content\textures\glass-lighter.png" />
+    <Content Include="Content\textures\glass.png" />
+    <Content Include="Content\textures\highlight.png" />
+    <Content Include="Content\textures\leather1.png" />
+    <Content Include="Content\textures\leather2.png" />
+    <Content Include="Content\textures\noise.png" />
+    <Content Include="Content\textures\stripe1.png" />
+    <Content Include="Content\textures\stripe2.png" />
+    <Content Include="Content\textures\stripe3.png" />
+    <Content Include="Content\textures\stripe4.png" />
+    <Content Include="Content\textures\stripe5.png" />
+    <Content Include="Content\textures\stripe6.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\Summerland\img\bg-header-holder.jpg" />
+    <Content Include="Content\themes\Summerland\img\header-logo-sans-text.png" />
+    <Content Include="Content\themes\Summerland\img\header-logo.png" />
+    <Content Include="Content\themes\Summerland\img\topnav-bg.png" />
+    <Content Include="Content\kendo.custom.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\themes\Summerland\Site.css" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Content\Passwords.doc" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="lib\Kendo.Mvc.dll" />
+    <Content Include="lib\Kendo.Mvc.xml" />
+    <Content Include="robots.txt" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\console.min.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\kendo.aspnetmvc.min.js" />
+    <Content Include="Scripts\kendo.culture.en-GB.min.js" />
+    <Content Include="Scripts\kendo.web.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\prettify.min.js" />
+    <Content Include="Scripts\Summerland.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="sitemap.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout2ColWideLeft.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\MoreInfo\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Pictures\Index.cshtml" />
+    <Content Include="Views\Availability\Index.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Availability\2013.cshtml" />
+    <Content Include="Views\Shared\_KendoCulture.cshtml" />
+    <Content Include="Views\Shared\_GoogleTrackPageView.cshtml" />
+    <Content Include="Views\Shared\_AvailabilityKey.cshtml" />
+    <Content Include="Views\Availability\2014.cshtml" />
+    <Content Include="Views\Shared\_LayoutFullWidth.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_EnquiryForm.cshtml" />
+    <Content Include="Views\MoreInfo\Contact-Us.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\MultilineText.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\String.cshtml" />
+    <Content Include="Views\Shared\_EnquiryFormThanks.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\EmailAddress.cshtml" />
+    <Content Include="Views\Shared\_EnquiryFormError.cshtml" />
+    <Content Include="Views\Shared\_DefaultSidebar.cshtml" />
+    <Content Include="Views\Shared\_Copyright.cshtml" />
+    <Content Include="Views\About\terms-and-conditions.cshtml" />
+    <Content Include="Views\MoreInfo\location.cshtml" />
+    <Content Include="Views\MoreInfo\Feedback.cshtml" />
+    <Content Include="Views\Shared\_FeedbackFormThanks.cshtml" />
+    <Content Include="Views\Shared\_FeedbackFormError.cshtml" />
+    <Content Include="Views\Shared\_FeedbackForm.cshtml" />
+    <Content Include="Views\MoreInfo\Leave-Feedback.cshtml" />
+    <Content Include="Views\Availability\2015.cshtml" />
+    <Content Include="Views\Shared\_PriceList.cshtml" />
+    <Content Include="Views\Availability\2016.cshtml" />
+    <Content Include="Views\Availability\2017.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Summerland.BL\Summerland.BL.csproj">
+      <Project>{93bf283d-d491-45a3-affb-ec887ba0a2a8}</Project>
+      <Name>Summerland.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48209</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://summerland.local/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

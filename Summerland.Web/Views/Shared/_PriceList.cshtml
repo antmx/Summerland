@@ -1,0 +1,21 @@
+﻿@model Summerland.BL.ViewModels.PriceList
+
+<p>
+	Prices based on 2 sharing.
+</p>
+
+<p>
+	@Model.PricePartyOfTwoPounds.ToString("C0") / &euro;@Model.PricePartyOfTwoEuros.ToString("0") per week for 2 guests.
+</p>
+
+<p>
+	Additional guests &pound;20 / &euro;24, maximum 4 guests.
+</p>
+
+<p>
+	Additional weeks @Html.ActionLink("please enquire", "contact-us", "more-info", null, new { title = "enquire about additional weeks" }),
+</p>
+
+<p>
+	Availability from May to October only, no winter availability.
+</p>

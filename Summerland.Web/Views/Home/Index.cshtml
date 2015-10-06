@@ -1,0 +1,36 @@
+﻿@model Summerland.BL.ViewModels.PriceList
+
+@{
+	ViewBag.Title = "Home - Holiday apartment for rent in Los Cristianos, Tenerife, Canary Islands";
+}
+
+<h1>1 bedroom holiday apartment sleeps 4 for rent from @Model.PricePartyOfTwoPounds.ToString("C0") / &euro;@Model.PricePartyOfTwoEuros.ToString("0") per week</h1>
+
+<p>
+	<strong>NEW TO MARKET!!!</strong>
+</p>
+
+<p>
+	This new to market, privately owned, one bedroom apartment to let in the Summerland Complex is situated in the town centre of Los Cristianos on the Canary Island of Tenerife and is close to the bus station, supermarkets, bars and restaurants.
+</p>
+
+<img src="/Content/Images/thumbs/Livingroom-4.jpg" class="xfloat-l" title="Apartment living room - @ViewBag.Title">
+
+<p>
+	The Summerland complex features a large communal swimming pool and sundeck with a poolside bar which offers food and snacks.
+</p>
+
+<p>
+	Local English speaking contacts are available to guests throughout their stay.
+</p>
+
+
+<img src="/Content/Images/thumbs/pool-4.jpg" class="xfloat-r" title="Summerland complex pool - @ViewBag.Title">
+
+<p>
+	<b>Prices from @Model.PricePartyOfTwoPounds.ToString("C0") / &euro;@Model.PricePartyOfTwoEuros.ToString("0") per week.</b>
+</p>
+
+<p>
+	See <b><a href="@Url.Action("Index", "more-info")" title="More information">more information</a></b>.
+</p>

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Leave feedback - Holiday apartment for rent in Los Cristianos, Tenerife, Canary Islands";
+}
+
+<h1>Guests, leave feedback about your stay at our 1 bed holiday apartment</h1>
+
+<p>
+	We welcome feedback from our guests about their stay at our apartment in Summerland, Los Cristianos.
+</p>
+
+<p>
+	Please fill in this form to let us know your thoughts.
+</p>
+
+<div class="spacer-v10"></div>
+
+@Html.Partial("_FeedbackForm", new ViewDataDictionary { { "id", "feedbackForm1" } })

@@ -1,0 +1,131 @@
+﻿
+@{
+	Layout = "~/Views/Shared/_LayoutFullWidth.cshtml";
+	ViewBag.Title = "2015 Availability - holiday rental apartment in Los Cristianos, Tenerife, Canary Islands";
+}
+
+<h1>2015 availability at holiday rental apartment</h1>
+
+<p>
+	Check 2015 availability at our holiday rental apartment in Los Cristianos, Tenerife.
+</p>
+
+<p>
+	<a href="@Url.Action("2016", "Availability")" title="Check 2016 availability at our holiday rental apartment in Los Cristianos, Tenerife.">View 2016 availability</a>.
+
+	<span class="pad-right-30">&nbsp;</span>
+
+	<a href="@Url.Action("2017", "Availability")" title="Check 2017 availability at our holiday rental apartment in Los Cristianos, Tenerife.">View 2017 availability</a>.
+</p>
+
+<p>
+	@Html.Partial("_AvailabilityKey")
+</p>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201501")
+		  .Value(new DateTime(2015, 1, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201502")
+		  .Value(new DateTime(2015, 2, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201503")
+		  .Value(new DateTime(2015, 3, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201504")
+		  .Value(new DateTime(2015, 4, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<div class="spacer-v20"></div>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201505")
+		  .Value(new DateTime(2015, 5, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar202306")
+		  .Value(new DateTime(2015, 6, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201507")
+		  .Value(new DateTime(2015, 7, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201508")
+		  .Value(new DateTime(2015, 8, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<div class="spacer-v20"></div>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar202309")
+		  .Value(new DateTime(2015, 9, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201510")
+		  .Value(new DateTime(2015, 10, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201511")
+		  .Value(new DateTime(2015, 11, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<span class="spacer-h20"></span>
+
+@(Html.Kendo().Calendar()
+		  .Name("calendar201512")
+		  .Value(new DateTime(2015, 12, 1))
+		  .Footer(" ")
+		  .MonthTemplate(@"#= BuildDateMarker(data) #")
+)
+
+<script type="text/javascript" src="~/Scripts/Summerland.js"></script>

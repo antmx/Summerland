@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+Disallow:
+Sitemap: http://www.breaks-in-summerland-tenerife.co.uk/sitemap.xml
