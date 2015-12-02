@@ -222,6 +222,14 @@ calDates[+new Date(2015, 11, 12)] = "dt-b";
 calDates[+new Date(2015, 11, 13)] = "dt-b";
 calDates[+new Date(2015, 11, 14)] = "dt-b-am";
 
+calDates[+new Date(2016, 0, 1)] = "dt-b";
+calDates[+new Date(2016, 0, 2)] = "dt-b";
+calDates[+new Date(2016, 0, 3)] = "dt-b";
+calDates[+new Date(2016, 0, 4)] = "dt-b";
+calDates[+new Date(2016, 0, 5)] = "dt-b";
+calDates[+new Date(2016, 0, 6)] = "dt-b";
+calDates[+new Date(2016, 0, 7)] = "dt-b";
+
 calDates[+new Date(2016, 0, 11)] = "dt-b-pm";
 calDates[+new Date(2016, 0, 12)] = "dt-b";
 calDates[+new Date(2016, 0, 13)] = "dt-b";
