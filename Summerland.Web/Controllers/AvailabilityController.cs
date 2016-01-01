@@ -62,5 +62,14 @@ namespace Summerland.Web.Controllers
 		{
 			return View();
 		}
-	}
+
+      /// <summary>
+      /// GET: /Availability/2018
+      /// </summary>
+      [ActionName("2018")]
+      public ActionResult Y2018()
+      {
+         return View();
+      }
+   }
 }

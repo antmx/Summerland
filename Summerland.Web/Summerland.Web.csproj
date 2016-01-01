@@ -31,6 +31,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -413,6 +414,7 @@
     <Content Include="Views\Shared\_PriceList.cshtml" />
     <Content Include="Views\Availability\2016.cshtml" />
     <Content Include="Views\Availability\2017.cshtml" />
+    <Content Include="Views\Availability\2018.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
