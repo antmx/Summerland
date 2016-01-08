@@ -13,7 +13,7 @@ namespace Summerland.BL
 		}
 
 		public MailSettings(SmtpDeliveryMethod deliveryMethod, string fromAddress, string fromName, string host, int port, bool enableSsl, string replyToAddress)
-			: this(deliveryMethod, fromAddress, fromName, host, port, "anthony@netricity.co.uk", "rm250k5!", enableSsl, replyToAddress)
+			: this(deliveryMethod, fromAddress, fromName, host, port, "anthony@netricity.co.uk", "r......!", enableSsl, replyToAddress)
 		{
 
 		}
